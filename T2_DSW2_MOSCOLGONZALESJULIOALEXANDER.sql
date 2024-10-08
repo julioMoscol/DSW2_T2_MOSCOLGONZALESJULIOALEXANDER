@@ -101,3 +101,35 @@ INSERT INTO `Ventas` (`ClienteID`, `ProductoID`, `Cantidad`, `FechaVenta`, `Tota
 (3, 2, 2, '2024-10-03', 600.00),
 (4, 5, 1, '2024-10-04', 1200.00);
 
+DELIMITER //
+
+CREATE PROCEDURE registrarNuevaVenta(
+    IN p_cantidad INT,
+    IN p_fechaventa DATE,
+    IN p_total DOUBLE,
+    IN p_clienteid INT,
+    IN p_productoid INT
+)
+BEGIN
+    INSERT INTO ventas (cantidad, fechaventa, total, clienteid, productoid)
+    VALUES (p_cantidad, p_fechaventa, p_total, p_clienteid, p_productoid);
+END //
+
+DELIMITER ;
+
+DELIMITER //
+
+CREATE PROCEDURE actualizarProductoVenta(
+    IN p_ventaid INT,
+    IN p_cantidad INT
+)
+BEGIN
+    UPDATE ventas
+    SET cantidad = p_cantidad
+    WHERE ventaid = p_ventaid;
+END //
+
+DELIMITER ;
+
+
+select * from clientes

@@ -1,0 +1,19 @@
+POST
+
+/api/v1/categoria
+
+{
+    "categoriaid": null,
+    "nombrecategoria": "Chupetines",
+    "descripcion": "Chupetines de sabores a computadoras"
+}
+
+
+PUT
+
+/api/v1/categoria/5
+
+{
+    "nombrecategoria": "Arroz",
+    "descripcion": "Pastas enfriados para amd e intel o tarjetas graficas"
+}

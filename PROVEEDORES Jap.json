@@ -1,0 +1,24 @@
+POST
+
+/api/v1/proveedor
+
+{
+    "proveedorid": null,
+    "nombreproveedor": "Moscol E.I.R.L",
+    "contacto": "Julio Moscol",
+    "direccion": "Mz E Lt 49 Callao, Perú",
+    "telefono": "987654321",
+    "email": "moscolventas@moscoleirl.com"
+}
+
+PUT
+
+/api/v1/proveedor/5
+
+{
+    "nombreproveedor": "Moscol E.I.R.L",
+    "contacto": "Julio Moscol Gonzales",
+    "direccion": "Mz E Lt 49 Callao, Perú",
+    "telefono": "Sin celular",
+    "email": "moscolventas@moscoleirl.com"
+}

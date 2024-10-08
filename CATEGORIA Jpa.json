@@ -1,0 +1,8 @@
+GET (VISUALIZA PRODUCTOS CON PRECIO MAYOR A 100)
+/api/v1/productos/precio-mayor-100/
+
+
+
+
+GET (VISUALIZA PRODUCTOS NO DESCONTINUADOS CON STOCK MAYOR A 10)
+/api/v1/productos/stock-disponible/

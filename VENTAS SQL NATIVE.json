@@ -1,0 +1,20 @@
+POST (REGISTRAR NUEVA VENTA)
+
+/api/v1/ventas
+
+{
+    "ventaid": null,
+    "clienteid": 2,
+    "productoid": 4,
+    "cantidad": 100,
+    "fechaventa": "2024-10-04",
+    "total": 2000
+}
+
+PUT (ACTUALIZAR CANTIDAD DE VENTA)
+
+/api/v1/ventas/4
+
+{
+    "cantidad": 860
+}

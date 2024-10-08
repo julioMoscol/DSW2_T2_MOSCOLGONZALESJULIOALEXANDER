@@ -1,0 +1,23 @@
+GET (BUSCAR CLIENTES POR TELEFONO)
+
+/api/v1/clientes/?telefono=555123456
+
+{
+    "correcto": true,
+    "mensaje": "Listado de clientes por telefono",
+    "respuesta": [
+        {
+            "clienteId": null,
+            "nombrecliente": "Corporación ABC",
+            "contacto": "Carlos Gómez",
+            "direccion": "Calle Empresarial 456, Lima",
+            "telefono": "555123456",
+            "email": "cgomez@corporacionabc.com"
+        }
+    ],
+    "codigoError": null
+}
+
+GET (BUSCAR CLIENTES POR NOMBRE DE CONTACTO Y DIRECCION)
+
+/api/v1/clientes/contacto-direccion/?contacto=Rosa Morales&direccion=Jr. Industrial 321, Santiago
